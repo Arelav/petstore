@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FrontComponent } from './front/front.component';
 
 const routes: Routes = [
   {
     path: '',
-    children: []
+    children: [
+      {
+        path: '',
+        component: FrontComponent
+      }
+    ]
   }
 ];
 
