@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/timer';
+import 'rxjs/add/operator/mapTo';
 
 @Injectable()
 export class StoreService {
@@ -103,8 +106,8 @@ export class StoreService {
 
   }
 
-  get storeItems(): Array<Product> {
-    return this.store;
+  get storeItems(): Observable<Array<Product>> {
+    return Observable.timer(1000).mapTo(this.store);
   }
 
 }
