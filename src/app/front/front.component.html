@@ -1,9 +1,3 @@
-<div class="products">
-  <!--<app-product *ngFor="let item of store" [item]="item"></app-product>-->
-  <!--<app-product *ngFor="let item of storeItems" [item]="item | async"></app-product>-->
-  <!--<h2 *ngIf="store['pending'] | async">Loading...</h2>-->
-  <!--<h2>{{store}} ====</h2>-->
-  <!--<p>{{store | async | json}}</p>-->
-  <app-products [products]="storeItems | async"></app-products>
-</div>
+<h1>Pets Store</h1>
+<app-products [products]="storeItems | async"></app-products>
 

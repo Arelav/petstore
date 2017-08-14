@@ -14,7 +14,6 @@ import { storeReducer } from './store.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreEffects } from './store.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
