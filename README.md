@@ -1,4 +1,5 @@
 # Petstore
+# Online demo https://arelav.github.io/petstore/
 
 ## If you want to run locally - first follow the instructions from [API mock repository](https://github.com/Arelav/petstore-api)
 

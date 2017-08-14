@@ -10,7 +10,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng build --prod --aot --base-href https://arelav.github.io/petstore/ && angular-cli-ghpages"
-
   },
   "private": true,
   "dependencies": {
