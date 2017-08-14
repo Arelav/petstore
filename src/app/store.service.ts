@@ -15,8 +15,8 @@ export class StoreService {
   }
 
   get storeItems(): Observable<Array<Product>> {
-    return Observable.timer(1000).mapTo(this.store);
-    // return this.http.get('//localhost:10010/pets');
+    // return Observable.timer(1000).mapTo(this.store);
+    return this.http.get('//localhost:10010/pets');
   }
 
 }
