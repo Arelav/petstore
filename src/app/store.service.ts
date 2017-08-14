@@ -12,8 +12,6 @@ export class StoreService {
   private store: Array<Product> = mock;
 
   constructor(private http: HttpClient) {
-
-
   }
 
   get storeItems(): Observable<Array<Product>> {
