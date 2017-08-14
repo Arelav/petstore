@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Actions, Effect, toPayload } from '@ngrx/effects';
 import { Observable } from 'rxjs/Observable';
-import { Action } from '@ngrx/store';
 import { StoreService } from './store.service';
 import { GET_STORE_ITEMS, GET_STORE_ITEMS_SUCCESS, GET_STORE_ITEMS_ERROR } from './store.reducer';
 import 'rxjs/add/operator/switchMap';
