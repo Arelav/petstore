@@ -1,0 +1,7 @@
+<p *ngIf="products.pending">Loading...</p>
+
+<app-product [item]="product"
+      *ngFor="let product of products.data">
+</app-product>
+
+<p *ngIf="products.error">{{products.error}}</p>

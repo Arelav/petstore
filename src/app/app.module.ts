@@ -9,6 +9,12 @@ import { FrontModule } from './front/front.module';
 import { StoreService } from './store.service';
 import { MaterialComponentsModule } from './material-components/material-components.module';
 import { FooterComponent } from './footer/footer.component';
+import { StoreModule } from '@ngrx/store';
+import { storeReducer } from './store.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreEffects } from './store.effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +28,11 @@ import { FooterComponent } from './footer/footer.component';
     FrontModule,
     AppRoutingModule,
     MaterialComponentsModule,
+    StoreModule.forRoot({store: storeReducer}),
+    EffectsModule.forRoot([StoreEffects]),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25 //  Retains last 25 states
+    })
   ],
   providers: [StoreService],
   bootstrap: [AppComponent],

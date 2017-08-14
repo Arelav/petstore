@@ -107,7 +107,7 @@ export class StoreService {
   }
 
   get storeItems(): Observable<Array<Product>> {
-    return Observable.timer(1000).mapTo(this.store);
+    return Observable.timer(10000).mapTo(this.store);
   }
 
 }

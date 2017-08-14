@@ -8,3 +8,6 @@
   float: right;
 }
 
+a[disabled] {
+  cursor: not-allowed;
+}
